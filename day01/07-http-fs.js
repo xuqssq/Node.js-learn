@@ -11,7 +11,7 @@ var server = http.createServer()
 server.on('request', function(req, res) {
     var url = req.url
     if (url === '/') {
-        fs.readFile('./resource/index.html', function(err, data) {
+        fs.readFile('../resource/index.html', function(err, data) {
             if (err) {
                 res.setHeader('Content-Type', 'text/plain; charset=utf8')
                 res.end('文件读取失败，请稍后重试~')
@@ -26,7 +26,7 @@ server.on('request', function(req, res) {
     } else if (url === '/picture') {
         //url：统一资源定位符
         //一个 url 最终其实是要对应到一个资源的
-        fs.readFile('./resource/preview.jpg', function(err, data) {
+        fs.readFile('../resource/preview.jpg', function(err, data) {
             if (err) {
                 res.setHeader('Content-Type', 'text/plain; charset=utf8')
                 res.end('文件读取失败，请稍后重试~')
@@ -40,6 +40,5 @@ server.on('request', function(req, res) {
     }
 })
 server.listen(3000, function() {
-        console.log('Server is running...')
-    })
-    // www.xiaomujin.club
+    console.log('Server is running...')
+})
