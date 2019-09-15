@@ -1,0 +1,27 @@
+{
+    "students": [{
+        "id": 3,
+        "name": "木槿",
+        "gender": 0,
+        "age": "19",
+        "hobbies": "读书，学习，敲代码"
+    }, {
+        "id": 4,
+        "name": "木槿",
+        "gender": 0,
+        "age": 18,
+        "hobbies": "读书，学习，敲代码"
+    }, {
+        "id": 5,
+        "name": "木槿",
+        "gender": 0,
+        "age": 18,
+        "hobbies": "读书，学习，敲代码"
+    }, {
+        "name": "莫子谦",
+        "gender": "1",
+        "age": "19",
+        "hobbies": "唱、跳、rap",
+        "id": 15
+    }]
+}
